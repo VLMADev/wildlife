@@ -1,31 +1,85 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
     <title>Wildlife</title>
-</head>
-<body>
-    <header>        
-        
+  </head>
+
+  <body>
+    <section class="top-image-background">
+
+      <header>
         <div class="container">
-            <section>
-                <article>
-
-                    <img src="image/logo.svg">
-
-                </article>
-            </section>
+          <section class="logo-navigation">
+            <article class="logo">
+              <img src="/image/logo.svg" alt="logo" />
+              <span> wildlife </span>
+            </article>
+            <nav class="navigation">
+              <ul class="list-navigation">
+                <li><a href="">Blog</a></li>
+                <li><a href="">Contacts</a></li>
+                <li>
+                  <a href=""><img src="/image/search.svg" alt="" /></a>
+                </li>
+                <li><a href="">Sign in</a></li>
+              </ul>
+            </nav>
+          </section>
         </div>
-    </header>
+      </header>
 
+      <div class="container">
+        <section class="survival">
+          <article class="survival-text">
+            <h1>Survival</h1>
+            <p>
+              What this means is that we exist to help protect our environment
+              and do in numbers of ways. You can save the planet by donation.
+            </p>
+            <a href="#"> Donate </a>
+          </article>
+        </section>
+      </div>
+    </section>
     <main>
-        
+      <div class="container">
+          <section class="laster-articles">
+            <h2>Latest articles</h2>
+            <span> Breaking news from the wild </span>
+            <article class="scroll-image">
+                <nav class="scroll-list-item">
+                    <a href="#"><img src="image/arrow.png" alt=""></a>
+                    <div class="list-item-title">
+                        <img src="image/image1.jpg" alt="Deer">
+                        <aside class="item-title">
+                            <span>Deer</span>
+                            <span>Naturalist investigation</span>
+                        </aside>
+                    </div>
+                    <div>
+                        <img src="image/image2.jpg" alt="Squirrel">
+                    </div>
+                    <div>
+                        <img src="image/image3.jpg" alt="Bird">
+                    </div>
+                    <a href="#"><img class="arrow-reverse" src="image/arrow.png" alt=""></a>
+                </nav>
+            </article>
+          </section>
+          <div class="scroll-pictures"></div>
+          <section class="get-notified"></section>
+      </div>
     </main>
-
-    <footer>
-
-    </footer>
-</body>
+    <footer></footer>
+  </body>
 </html>
