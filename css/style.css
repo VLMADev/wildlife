@@ -188,7 +188,9 @@ h3 {
 
 .arrow-reverse {
     transform: rotate(180deg);
+    
 }
+
 
 .get-notified {
 }
