@@ -1,12 +1,17 @@
 * {
     font-family: "Open Sans", sans-serif;
   font-weight: 400;
-  max-width: 1440px;
+ 
 }
+
+html, 
 body {
   margin: 0;
   padding: 0;
-  background-color: #F7F7F7;
+}
+
+body {
+  background-color: #CCCCCC;
 }
 
 h1,
@@ -39,12 +44,11 @@ h3 {
 
 .top-image-background {
   position: relative;
-    background: url(/image/header-beackground.png) no-repeat;
-  z-index: -20;
+  background: url(/image/header-beackground.png) no-repeat;
   width: 100%;
   top: -5px;
   left: -1px;
-  height: 780px;
+  max-height: 780px;
   background-size: cover;
 }
 
@@ -52,6 +56,7 @@ h3 {
 .container {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 10px;
 }
 
 .logo-navigation {
@@ -104,7 +109,7 @@ h3 {
   
 }
 
-.list-navigation li:last-child {
+.sign-batton {
   padding: 7.5px 22px;
   border: 2px solid #cd6326;
   border-radius: 5px;
@@ -131,12 +136,15 @@ h3 {
   line-height: 27px;
 }
 
-.survival-text a {
+.button {
   color: #F7F7F7;
   background-color: #cd6326;
   font-size: 23px;
   line-height: 27px;
   text-align: center;
+}
+
+.survival-text a {
   max-width: 274px;
   padding: 14.7px 40.5px;
   border-radius: 5px;
@@ -145,6 +153,7 @@ h3 {
 .laster-articles {
     position: relative;
     top: 115px;
+    margin: 0 0 349px 0;
     
 }
 
@@ -165,11 +174,12 @@ h3 {
 }
 
 .scroll-image { 
-    margin: 120px 0 239px 0;
+    margin: 120px 0 0px 0;
 }
-
+/* Добаить поворт при уменьшении размеров на 90 deg */
 .scroll-list-item {
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
     justify-content: space-between;
     align-items: center;
@@ -180,17 +190,171 @@ h3 {
 }
 .item-title {
     position: absolute;
-    left: 57px;
+    display: block;
+    width: 100%;
     bottom: 40px;
-    text-align: center;
-   
+
+}
+
+.item-title span {
+  font-size: 17px;
+  color: #F7F7F7;
+  
+}
+
+.item-title span:first-child {
+  font-size: 22px;
+  line-height: 48px;
 }
 
 .arrow-reverse {
     transform: rotate(180deg);
-    
+
 }
 
 
 .get-notified {
+  position: relative;
+  margin-bottom: 239px;
+}
+
+.get-notified h3 {
+  color:#333333;
+  text-align: center;
+  font-size: 27px;
+  line-height: 40px;
+  margin-bottom: 59px;
+}
+
+
+.form-send {
+  display: flex;
+  justify-content: center;
+}
+
+input[id="POST-name"] {
+  font-size: 23px;
+  line-height: 27px;
+
+  max-width: 510px;
+  width: 100%;
+
+  padding: 15px;
+  background-color: #CCCCCC;
+  border: 1px solid #666666;
+}
+
+input[id="sumbit-send"] {
+  position: relative;
+  left: -1px;
+  border-radius: 0 5px 5px 0;
+
+  max-width: 120px;
+  height: 64px;
+  width: 100%;
+}
+
+.footer {
+  background: url(/image/footer-background.jpg) no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+
+.description-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.description-footer>.logo {
+  padding-top: 0;
+}
+.bottom-navigation {
+  display: flex;
+  align-items: center;
+}
+
+.navigration-block {
+  width: 480px;
+  padding: 150px 0;
+}
+
+.bottom-navigation-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+.bottom-navigation-list li a {
+  font-size: 23px;
+  line-height: 60px;
+  color: #F7F7F7;
+}
+
+.bottom-navigation-links {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.bottom-links {
+  width: 241px;
+}
+
+.bottom-navigation-links li {
+  background-color: #F7F7F7;
+  border-radius: 50%;
+}
+
+/* hover */
+
+.sign-batton:hover {
+  background-color: #CD6326;
+}
+
+.button:hover {
+  background-color: #E39128;
+}
+
+/* pressed */
+
+.sign-batton:active {
+  background-color: #8F5613;
+  border-color: #8F5613;
+}
+.button:active {
+  background-color: #8F5613;
+}
+
+/* media */
+
+@media (max-width: 1023px) {
+  .description-footer {
+    display: block;
+    width: 100%;
+    
+  }
+  .description-footer .logo {
+    margin-right: 0;
+    padding-top: 30px;
+    justify-content: center;
+  }
+  .navigration-block {
+    display: flex;
+    padding: 50px 0;
+  }
+  .bottom-navigation {
+    margin: 0 auto;
+  }
+  .bottom-links {
+    padding-bottom: 50px;
+  }
+}
+@media (max-width: 600px) {
+  .bottom-navigation-list {
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
 }
