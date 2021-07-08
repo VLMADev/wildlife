@@ -7,120 +7,108 @@
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Roboto&display=swap"
       rel="stylesheet"
     />
     <title>Wildlife</title>
   </head>
 
   <body>
-    <section class="top-image-background">
-      <header>
+    <section class="header-main-block">
+      <section class="header-img">
+        <img src="/image/header-beackground.png" alt="header-beackground">
+      </section>
         <div class="container">
-          <section class="logo-navigation">
-            <article class="logo">
-              <img src="/image/logo.svg" alt="logo" />
-              <span> wildlife </span>
-            </article>
-            <nav class="navigation">
-              <ul class="list-navigation">
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contacts</a></li>
-                <li>
-                  <a href="#"><img src="/image/search.svg" alt="search" /></a>
-                </li>
-                <li class="sign-batton"><a href="#">Sign in</a></li>
-              </ul>
-            </nav>
-          </section>
-        </div>
-      </header>
+          <header>
+            <section class="header-section">
+              <article class="logo">
+                <img src="/image/logo.svg" alt="logo" />
+                <span class="logo-title">Wildlife</span>
+              </article>
 
-      <div class="container">
-        <section class="survival">
-          <article class="survival-text">
-            <h1>Survival</h1>
-            <p>
-              What this means is that we exist to help protect our environment
-              and do in numbers of ways. You can save the planet by donation.
-            </p>
-            <a class="button" href="#"> Donate </a>
-          </article>
-        </section>
+              <nav class="header-navigation">
+                <ul class="navigation-list">
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">Contacts</a></li>
+                  <li>
+                    <a href="#"><img src="image/search.svg" alt="search" /></a>
+                  </li>
+                  <li class="list-item-sign"><a href="#">Sign in</a></li>
+                </ul>
+              </nav>
+            </section>
+          </header>
+          <section class="survival">
+            <article class="survival-body">
+              <h1>Survival</h1>
+              <p class="survival-text">
+                What this means is that we exist to help protect our environment
+                and do in numbers of ways. You can save the planet by donation.
+              </p>
+              <a class="survival-button button" href="#">Donate</a>
+            </article>
+          </section>
       </div>
     </section>
 
-    <main>
+    <main class="main">
       <div class="container">
-          <section class="laster-articles">
+        <section class="section-main-block">
+          <article class="block-title">
             <h2>Latest articles</h2>
-            <span> Breaking news from the wild </span>
-            <article class="scroll-image">
-                <nav class="scroll-list-item">
-                    <a href="#"><img src="image/arrow.png" alt=""></a>
-                    <div class="list-item-title">
-                        <img src="image/image1.jpg" alt="Deer">
-                        <aside class="item-title">
-                            <span>Deer</span>
-                            <span>Naturalist investigation</span>
-                        </aside>
-                    </div>
-                    <div class="list-item-title">
-                        <img src="image/image2.jpg" alt="Squirrel">
-                        <aside class="item-title">
-                          <span>Squirrel</span>
-                          <span>Kamikaze squirrels</span>
-                        </aside>
-                    </div>
-                    <div class="list-item-title">
-                        <img src="image/image3.jpg" alt="Bird">
-                        <aside class="item-title">
-                          <span>Bird</span>
-                          <span>Birds Fight club</span>
-                        </aside>
-                    </div>
-                    <a href="#"><img class="arrow-reverse" src="image/arrow.png" alt=""></a>
-                </nav>
-            </article>
+            <p class="sub-h">
+              Breaking news from the wild
+            </p>
+          </article>
+          <section class="scroll-image-block">
+            <ul class="scroll-image-list">
+              <div class="image-item">
+              <li><a href="#"><img src="/image/arrow.png" alt="arrow"></a></li>
+              <aside class="image-item-titel">
+                <h4></h4>
+                <span></span>
+              </aside>
+              </div>
+              <div class="image-item">
+                <li><a href="#"><img src="/image/image1.jpg" alt="Deer"></a></li>
+                <aside class="image-item-titel">
+                  <h4>Deer</h4>
+                  <span>Naturalist investigation</span>
+                </aside>
+              </div>
+              <div class="image-item">
+                <li><a href="#"><img src="/image/image2.jpg" alt="Squirrel"></a></li>  
+                <aside class="image-item-titel">
+                  <h4>Squirrel</h4>
+                  <span>Kamikaze squirrels</span>
+                </aside>
+              </div>
+              <div class="image-item">
+                <li><a href="#"><img src="/image/image3.jpg" alt="Bird"></a></li>
+                <aside class="image-item-titel">
+                  <h4>Bird</h4>
+                  <span>Birds Fight club</span>
+                </aside>
+              </div>
+              <li class="arrow-rotate"><a href="#"><img src="/image/arrow.png" alt="arrow-rotate"></a></li>
+            </ul>
           </section>
-          <section class="get-notified">
+          <article class="form-block">
             <h3>Get notified about new amazing articles</h3>
-            <article class="form">
-              <form class="form-send" action="" method="POST">
-                <input id="POST-name" type="email" name="email" placeholder="Email">
-                <input class="button" id="sumbit-send" type="submit" value="Send">
-              </form>
-            </article>
-          </section>
+            <form class="form" action="" method="POST">
+              <div class="form-items">
+                <input class="email-field" type="email" name="email" id="email-field" placeholder="Email">
+                <input class="button" type="button" value="Send">
+              </div>
+            </form>
+          </article>
+        </section>
       </div>
     </main>
-    <footer>
-        <section class="footer">
-          <div class="container">
-            <section class="description-footer">
-                <aside class="logo">
-                  <img src="/image/logo.svg" alt="logo" />
-                  <span> wildlife </span>
-                </aside>
-                <nav class="bottom-navigation navigration-block">
-                  <ul class="bottom-navigation-list">
-                    <li><a href="#">Articles</a></li>
-                    <li><a href="#">About us</a></li>
-                    <li><a href="#">Learn more</a></li>
-                  </ul>
-                </nav>
-                <nav class="bottom-navigation bottom-links">
-                  <ul class="bottom-navigation-links">
-                    <li><a href="#"><img src="/image/fb.svg" alt=""></a></li>
-                    <li><a href="#"><img src="/image/inst.svg" alt=""></a></li>
-                    <li><a href="#"><img src="/image/pic.svg" alt=""></a></li>
-                    <li><a href="#"><img src="/image/tg.svg" alt=""></a></li>
-                  </ul>
-                </nav>
-            </section>
-          </div>  
-        </section>
-    </footer>
+
+    <footer></footer>
   </body>
 </html>
