@@ -17,10 +17,8 @@
   </head>
 
   <body>
-    <section class="header-main-block">
+    <section class="container-full">
       <section class="header-img">
-        <img src="/image/header-beackground.png" alt="header-beackground">
-      </section>
         <div class="container">
           <header>
             <section class="header-section">
@@ -51,64 +49,127 @@
               <a class="survival-button button" href="#">Donate</a>
             </article>
           </section>
-      </div>
+        </div>
+      </section>
     </section>
 
     <main class="main">
-      <div class="container">
-        <section class="section-main-block">
-          <article class="block-title">
-            <h2>Latest articles</h2>
-            <p class="sub-h">
-              Breaking news from the wild
-            </p>
-          </article>
-          <section class="scroll-image-block">
-            <ul class="scroll-image-list">
-              <div class="image-item">
-              <li><a href="#"><img src="/image/arrow.png" alt="arrow"></a></li>
-              <aside class="image-item-titel">
-                <h4></h4>
-                <span></span>
-              </aside>
-              </div>
-              <div class="image-item">
-                <li><a href="#"><img src="/image/image1.jpg" alt="Deer"></a></li>
-                <aside class="image-item-titel">
-                  <h4>Deer</h4>
-                  <span>Naturalist investigation</span>
-                </aside>
-              </div>
-              <div class="image-item">
-                <li><a href="#"><img src="/image/image2.jpg" alt="Squirrel"></a></li>  
-                <aside class="image-item-titel">
-                  <h4>Squirrel</h4>
-                  <span>Kamikaze squirrels</span>
-                </aside>
-              </div>
-              <div class="image-item">
-                <li><a href="#"><img src="/image/image3.jpg" alt="Bird"></a></li>
-                <aside class="image-item-titel">
-                  <h4>Bird</h4>
-                  <span>Birds Fight club</span>
-                </aside>
-              </div>
-              <li class="arrow-rotate"><a href="#"><img src="/image/arrow.png" alt="arrow-rotate"></a></li>
-            </ul>
+      <div class="container-full main-color">
+        <div class="container">
+          <section class="section-main-block">
+            <article class="block-title">
+              <h2>Latest articles</h2>
+              <p class="sub-h">Breaking news from the wild</p>
+            </article>
+            <section class="scroll-image-block">
+              <ul class="scroll-image-list">
+                
+                
+                  <li class="arrow">
+                    <a href="#"><img src="/image/arrow.png" alt="arrow" /></a>
+                  </li>
+                
+
+                <div class="image-item">
+                  <li>
+                    <a href="#"><img src="/image/image1.jpg" alt="Deer" /></a>
+                  </li>
+                  <aside class="image-item-titel">
+                    <h4>Deer</h4>
+                    <span>Naturalist investigation</span>
+                  </aside>
+                </div>
+                <div class="image-item">
+                  <li>
+                    <a href="#"
+                      ><img src="/image/image2.jpg" alt="Squirrel"
+                    /></a>
+                  </li>
+                  <aside class="image-item-titel">
+                    <h4>Squirrel</h4>
+                    <span>Kamikaze squirrels</span>
+                  </aside>
+                </div>
+                <div class="image-item">
+                  <li>
+                    <a href="#"><img src="/image/image3.jpg" alt="Bird" /></a>
+                  </li>
+                  <aside class="image-item-titel">
+                    <h4>Bird</h4>
+                    <span>Birds Fight club</span>
+                  </aside>
+                </div>
+
+                <li class="arrow-rotate">
+                  <a href="#"
+                    ><img src="/image/arrow.png" alt="arrow-rotate"
+                  /></a>
+                </li>
+
+              </ul>
+            </section>
+            <article class="form-block">
+              <h3>Get notified about new amazing articles</h3>
+              <form class="form" action="" method="POST">
+                <div class="form-items">
+                  <input
+                    class="email-field"
+                    type="email"
+                    name="email"
+                    id="email-field"
+                    placeholder="Email"
+                  />
+                  <input class="button" type="button" value="Send" />
+                </div>
+              </form>
+            </article>
           </section>
-          <article class="form-block">
-            <h3>Get notified about new amazing articles</h3>
-            <form class="form" action="" method="POST">
-              <div class="form-items">
-                <input class="email-field" type="email" name="email" id="email-field" placeholder="Email">
-                <input class="button" type="button" value="Send">
-              </div>
-            </form>
-          </article>
-        </section>
+        </div>
       </div>
     </main>
 
-    <footer></footer>
+    <footer>
+      <div class="container-full">
+        <section class="down-image-fon">
+          <div class="container">
+            <section class="footer-navigation-block">
+              <article class="down-logo">
+                <img src="/image/logo.svg" alt="logo" />
+                <span class="logo-title">Wildlife</span>
+              </article>
+
+              <article class="down-navigation-block">
+                <nav class="down-navigation">
+                  <ul class="down-navigation-list">
+                    <li><a href="#">Articles</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Learn more</a></li>
+                  </ul>
+                </nav>
+              </article>
+
+              <article class="down-navigation-block-links">
+                <nav class="dowm-navigation">
+                  <ul class="dowm-navigation-list">
+                    <li>
+                      <a href="#"><img src="/image/fb.svg" alt="fb" /></a>
+                    </li>
+                    <li>
+                      <a href="#"><img src="/image/inst.svg" alt="inst" /></a>
+                    </li>
+                    <li>
+                      <a href="#"><img src="/image/pic.svg" alt="pic" /></a>
+                    </li>
+                    <li>
+                      <a href="#"><img src="/image/tg.svg" alt="tg" /></a>
+                    </li>
+                  </ul>
+                </nav>
+              </article>
+            </section>
+          </div>
+        </section>
+      </div>
+    </footer>
   </body>
 </html>
