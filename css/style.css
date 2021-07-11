@@ -13,14 +13,14 @@ li {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 li a {
   font-size: 23px;
   line-height: 60px;
   color: #F7F7F7;
-}
-
-a {
-  text-decoration: none;
 }
 
 h1 {
@@ -178,6 +178,13 @@ h4 {
 }
 .section-main-block .scroll-image-block .scroll-image-list .image-item {
   position: relative;
+}
+.section-main-block .scroll-image-block .scroll-image-list .image-item li a {
+  width: 100%;
+}
+.section-main-block .scroll-image-block .scroll-image-list .image-item li a img {
+  max-width: 100%;
+  max-height: 100%;
 }
 .section-main-block .scroll-image-block .scroll-image-list .image-item .image-item-titel {
   position: absolute;
@@ -433,5 +440,62 @@ h4 {
   }
   .section-main-block .form-block .form .form-items {
     margin-bottom: 150px;
+  }
+}
+@media (max-width: 400px) {
+  .header-section {
+    margin-bottom: 30px;
+  }
+  .header-section .header-navigation {
+    width: 100%;
+  }
+  .header-section .header-navigation .navigation-list li {
+    width: 40%;
+  }
+  .header-section .header-navigation .navigation-list li a {
+    font-size: 18px;
+  }
+  .header-section .header-navigation .navigation-list .list-item-sign {
+    padding: 2px 0;
+  }
+
+  .survival .survival-body h1 {
+    font-size: 42px;
+  }
+  .survival .survival-body .survival-text {
+    font-size: 16px;
+  }
+  .survival .survival-body .survival-button {
+    display: block;
+    max-width: 76px;
+    margin: 0 auto;
+  }
+
+  .section-main-block .block-title h2 {
+    font-size: 44px;
+    padding-top: 80px;
+  }
+  .section-main-block .block-title .sub-h {
+    margin-top: 20px;
+    line-height: 40px;
+  }
+
+  .form-block .form .form-items {
+    margin-bottom: 150px;
+  }
+
+  .footer-navigation-block {
+    line-height: 50px;
+  }
+  .footer-navigation-block .down-navigation-block {
+    display: block;
+  }
+  .footer-navigation-block .down-navigation-block .down-navigation .down-navigation-list {
+    display: block;
+    text-align: center;
+  }
+  .footer-navigation-block .down-navigation-block .down-navigation .down-navigation-list li a {
+    font-size: 20px;
+    line-height: 50px;
   }
 }

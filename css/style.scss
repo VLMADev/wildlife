@@ -28,15 +28,16 @@ li {
     list-style: none;
 }
 
+a {
+    text-decoration: none;
+}
+
 li a {
     font-size: 23px;
     line-height: 60px;
     color: $color-font-light;
 }
 
-a {
-    text-decoration: none;
-}
 
 h1 {
     color: $color-orange-main;
@@ -131,13 +132,16 @@ h4 {
                 border: 2px $color-orange-main solid;
                 border-radius: 5px;
                 padding: 2px 23px;
+
                 a {
                     text-align: center;
                     line-height: 40px;
                 }
+
                 &:hover {
                     background-color: $color-orange-main;
                 }
+
                 &:active {
                     border-color: $color-orange-dark;
                     background-color: $color-orange-dark;
@@ -224,6 +228,18 @@ h4 {
             .image-item {
                 position: relative;
 
+                li {
+
+                    a {
+                        width: 100%;
+
+                        img {
+                            max-width: 100%;
+                            max-height: 100%;
+                        }
+                    }
+                }
+
                 .image-item-titel {
                     position: absolute;
                     bottom: 60px;
@@ -296,7 +312,7 @@ h4 {
                     background-color: $color-orange-main;
                     border-radius: 0 5px 5px 0;
 
-                    
+
                     &:hover {
                         background-color: $color-orange-light;
                     }
@@ -313,7 +329,7 @@ h4 {
 .down-image-fon {
     background: url(/image/footer-background.jpg) no-repeat #181617;
     background-size: 100% 100%;
-  
+
 
 }
 
@@ -390,9 +406,11 @@ h4 {
     .container-full {
         max-width: 100%;
     }
+
     .container {
         max-width: 750px;
     }
+
     .scroll-image-list {
         flex-wrap: wrap;
     }
@@ -403,14 +421,16 @@ h4 {
 
         .scroll-image-block {
             display: block;
-            
+
             .scroll-image-list {
                 display: block;
                 text-align: center;
                 margin-bottom: 100px;
+
                 .arrow {
                     transform: rotate(90deg);
                     display: inline-block;
+
                     a {
                         img {
                             position: relative;
@@ -418,30 +438,30 @@ h4 {
                             left: -10px;
                             margin: 0 auto;
                         }
-                     }
-                    
+                    }
+
                 }
 
                 .arrow-rotate {
                     position: relative;
                     transform: rotate(-90deg);
+
                     a {
                         img {
                             position: relative;
                             top: 15px;
                             margin: 0 auto;
                         }
-                     }
+                    }
                 }
 
                 .image-item {
-                    .image-item-titel {
-
-                    }
+                    .image-item-titel {}
                 }
             }
-            
+
         }
+
         .form-block {
             .form {
                 .form-items {
@@ -459,31 +479,32 @@ h4 {
     .footer-navigation-block {
         justify-content: center;
         flex-wrap: wrap;
+
         .down-logo {
             display: block;
             width: 100%;
             text-align: center;
         }
+
         .down-navigation-block {
             .down-navigation {
                 .down-navigation-list {
-                    li {
-
-                    }
+                    li {}
                 }
             }
         }
 
         .down-navigation-block-links {
             width: 100%;
+
             .dowm-navigation {
                 min-width: 100%;
-                .dowm-navigation-list {
-                    
-                    justify-content: space-around;
-                    li {
 
-                    }
+                .dowm-navigation-list {
+
+                    justify-content: space-around;
+
+                    li {}
                 }
             }
         }
@@ -495,22 +516,25 @@ h4 {
         background-size: 100% 100%;
         height: 600px;
     }
+
     .container {
         max-width: 550px;
     }
-    
+
     .header-section {
         display: block;
         width: 100%;
         text-align: center;
         margin-bottom: 100px;
+
         .logo {
             display: block;
             width: 100%;
         }
+
         .header-navigation {
             width: 100%;
-            
+
         }
 
     }
@@ -518,13 +542,14 @@ h4 {
     .survival {
         .survival-body {
             display: block;
-            
+
             h1 {
                 text-align: center;
                 max-width: 100%;
                 margin-bottom: 20px;
-                
+
             }
+
             .survival-text {
                 display: block;
                 max-width: 100%;
@@ -543,14 +568,16 @@ h4 {
 
         .scroll-image-block {
             display: block;
-            
+
             .scroll-image-list {
                 display: block;
                 text-align: center;
                 margin-bottom: 100px;
+
                 .arrow {
                     transform: rotate(90deg);
                     display: inline-block;
+
                     a {
                         img {
                             position: relative;
@@ -558,30 +585,30 @@ h4 {
                             left: -10px;
                             margin: 0 auto;
                         }
-                     }
-                    
+                    }
+
                 }
 
                 .arrow-rotate {
                     position: relative;
                     transform: rotate(-90deg);
+
                     a {
                         img {
                             position: relative;
                             top: 15px;
                             margin: 0 auto;
                         }
-                     }
+                    }
                 }
 
                 .image-item {
-                    .image-item-titel {
-
-                    }
+                    .image-item-titel {}
                 }
             }
-            
+
         }
+
         .form-block {
             .form {
                 .form-items {
@@ -592,4 +619,102 @@ h4 {
     }
 
 
+}
+
+@media (max-width: 400px) {
+
+    .header-section {
+        margin-bottom: 30px;
+
+        .header-navigation {
+            width: 100%;
+
+            .navigation-list {
+
+                li {
+                    width: 40%;
+
+                    a {
+                        font-size: 18px;
+                    }
+                }
+
+                .list-item-sign {
+                    padding: 2px 0;
+                }
+            }
+
+        }
+
+    }
+
+    .survival {
+        .survival-body {
+
+
+            h1 {
+                font-size: 42px;
+
+            }
+
+            .survival-text {
+                font-size: 16px;
+            }
+
+            .survival-button {
+                display: block;
+                max-width: 76px;
+                margin: 0 auto;
+            }
+        }
+    }
+
+
+    .section-main-block {
+
+        .block-title {
+            h2 {
+                font-size: 44px;
+                padding-top: 80px;
+            }
+
+            .sub-h {
+                margin-top: 20px;
+                line-height: 40px;
+            }
+        }
+    }
+
+    .form-block {
+        .form {
+            .form-items {
+                margin-bottom: 150px;
+            }
+        }
+    }
+
+    .footer-navigation-block {
+        line-height: 50px;
+
+        .down-navigation-block {
+            display: block;
+
+            .down-navigation {
+
+                .down-navigation-list {
+                    display: block;
+                    text-align: center;
+
+                    li {
+                        a {
+                            font-size: 20px;
+                            line-height: 50px;
+
+                        }
+                    }
+                }
+            }
+        }
+
+    }
 }
